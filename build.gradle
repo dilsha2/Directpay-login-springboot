@@ -25,6 +25,7 @@ dependencies {
 	implementation 'org.modelmapper:modelmapper:2.4.4'
 	implementation 'mysql:mysql-connector-java:8.0.26'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'javax.servlet:jstl:1.2'
 }
 
 tasks.named('test') {
