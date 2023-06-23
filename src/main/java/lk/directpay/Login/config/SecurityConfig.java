@@ -24,7 +24,7 @@ public class SecurityConfig {
 
         http
                 .authorizeRequests()
-                .antMatchers("/login","/register").permitAll()
+                .antMatchers("/login").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
