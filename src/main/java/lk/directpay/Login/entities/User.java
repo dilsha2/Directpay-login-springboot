@@ -26,8 +26,8 @@ public class User {
     @Column(nullable=false)
     private String password;
 
-//    @Column(nullable=false)
-//    private String country;
+    @Column(nullable=false)
+    private String country;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
     @JoinTable(
