@@ -51,6 +51,25 @@
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('#userTable').DataTable({
+            language: {
+                emptyTable: "No Data Available",
+                info: "Showing _START_ to _END_ of _TOTAL_ entries",
+                infoEmpty: "Showing 0 to 0 of entries",
+                lengthMenu: "show _MENU_ entries",
+                search: "Search:",
+                zeroRecords: "No matching records found"
+            }
+        })
+    })
+</script>
 
 </body>
 </html>
