@@ -69,4 +69,8 @@ class UserServiceImpl implements UserService {
         role.setName("ROLE_ADMIN");
         return roleRepository.save(role);
     }
+
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
+    }
 }
