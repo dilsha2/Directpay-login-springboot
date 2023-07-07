@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1>Card Form</h1>
+
+<body class="min-vh-100 flex-column justify-content-center align-items-center" style="display: flex">
+<div class="card-container"></div>
+
+<div class="">
+    <div class="card w-75">
+        <div class="card-body">
+            <div class="card-title">Add new Card</div>
+            <div class="card-text">Please add card first, then you can continue to Dashboard. This card required for get your monthly membership payment</div>
+            <button type="button" class="btn-info mt-3 rounded-pill border-0 px-4 py-2" id="add-card">Add card</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.directpay.lk/dev/v1/directpayCardPayment.js?v=1"></script>
+
+</body>
+</html>
