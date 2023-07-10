@@ -29,6 +29,9 @@ public class User {
     @Column(nullable=false)
     private String country;
 
+    private Integer walletId;
+    private Integer cardId;
+
     @ManyToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
     @JoinTable(
             name="users_roles",
